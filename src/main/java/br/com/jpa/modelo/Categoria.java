@@ -8,6 +8,16 @@ import javax.persistence.Id;
 @Entity
 public class Categoria {
 
+	@Deprecated
+	public Categoria() {
+
+	}
+
+	public Categoria(String nome) {
+		super();
+		this.nome = nome;
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
